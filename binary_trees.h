@@ -1,6 +1,5 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -49,5 +48,3 @@ void binary_tree_print(const binary_tree_t *tree);
 
 
 #endif /* BINARY_TREES_H */
-
-
