@@ -60,13 +60,11 @@ size_t right_size = 0;
 
 if (tree == NULL)
 return (0);
-if (tree->left != NULL || tree->right != NULL)
-{
-left_size = binary_tree_height(tree->left) + 1;
-right_size = binary_tree_height(tree->right) + 1;
-}
-if (left_size >= right_size)
+
+left_size += 1 + binary_tree_height(tree->left);
+right_size += 1 + binary_tree_height(tree->right);
+if (left_size > right_size)
 return (left_size);
-else
+
 return (right_size);
 }
